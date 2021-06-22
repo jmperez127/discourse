@@ -3313,9 +3313,9 @@ ja:
           new: "新規"
           active: "アクティブ"
           staff: "スタッフ"
-          suspended: "凍結中"
+          suspended: "凍結"
           staged: "段階"
-        approved: "承認?"
+        approved: "承認済み？"
         titles:
           active: "アクティブユーザ"
           new: "新しいユーザ"

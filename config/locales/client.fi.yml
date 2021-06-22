@@ -4708,12 +4708,12 @@ fi:
         revert_confirm: "Oletko varma, että haluat kumota tekemäsi muutokset?"
         go_back: "Takaisin hakuun"
         recommended: "On suositeltavaa muokata seuraavaa tekstiä tarpeidesi mukaan:"
-        show_overriden: "Näytä vain muokatut"
+        show_overriden: "Näytä vain korvatut"
         locale: "Kieli:"
-        fallback_locale_warning: "Olet muokkaamassa kieltä joka perustuu kieleen %{fallback}. Käyttäjät, jotka valitsevat %{fallback} eivät näe muutoksia."
+        fallback_locale_warning: "Olet muokkaamassa kieltä, joka perustuu kieleen %{fallback}. Käyttäjät, jotka valitsevat näyttöliittymänsä kieleksi kielen %{fallback}, eivät näe muutoksiasi."
         more_than_50_results: "Hakutuloksia on yli 50. Rajaa hakuasi."
       settings:
-        show_overriden: "Näytä vain muokatut"
+        show_overriden: "Näytä vain korvatut"
         history: "Näytä muutoshistoria"
         reset: "nollaa"
         none: "ei mitään"
@@ -4726,17 +4726,17 @@ fi:
         no_results: "Ei tuloksia."
         more_than_30_results: "Tuloksia on yli 30. Rajaa hakuasi tai valitse luokka."
         clear_filter: "Tyhjennä"
-        add_url: "Lisää URL"
-        add_host: "lisää host"
+        add_url: "lisää URL"
+        add_host: "lisää isäntä"
         add_group: "lisää ryhmä"
         uploaded_image_list:
           label: "Muokkaa luetteloa"
-          empty: "Kuvia ei vielä ole. Voit liittää ensimmäisen kuvan."
+          empty: "Kuvia ei vielä ole. Lataa kuva palvelimeen."
           upload:
-            label: "Lähetä"
-            title: "Lähetä kuva(t)"
+            label: "Lataa"
+            title: "Lataa kuva(t)"
         selectable_avatars:
-          title: "Luettelo käyttäjien valittavissa olevista profiilikuvista"
+          title: "Avatarit, joista käyttäjä voi valita"
         categories:
           all_results: "Kaikki"
           required: "Pakolliset"
@@ -4755,8 +4755,8 @@ fi:
           developer: "Kehittäjä"
           embedding: "Upottaminen"
           legal: "Säännöt"
-          api: "Rajapinta"
-          user_api: "Käyttäjärajapinta"
+          api: "API"
+          user_api: "Käyttäjä-API"
           uncategorized: "Muut"
           backups: "Varmuuskopiot"
           login: "Kirjautuminen"
@@ -4767,59 +4767,59 @@ fi:
           groups: "Ryhmät"
           dashboard: "Hallintapaneeli"
         secret_list:
-          invalid_input: "Syöttökenttä ei voi olla tyhjä tai sisältää putkimerkkiä."
+          invalid_input: "Tekstikentät eivät voi olla tyhjiä tai sisältää pystyviivamerkkiä."
         default_categories:
-          modal_description: "Haluatko tämän muutoksen vaikuttavan takautuvasti? Tämä muuttaa kaikkien %{count} olemassa olevan käyttäjän käyttäjäasetusta."
+          modal_description: "Haluatko tämän muutoksen vaikuttavan takautuvasti? Tämä muuttaa kaikkien %{count} olemassa olevan käyttäjän asetusta."
           modal_yes: "Kyllä"
-          modal_no: "Ei, muutosta sovellettakoon vain tästedes"
+          modal_no: "Ei, käytä muutosta vain jatkossa"
         simple_list:
-          add_item: "Lisää asia..."
+          add_item: "Lisää kohde..."
         json_schema:
           edit: Käynnistä editori
-          modal_title: "Muokkaa %{name}"
+          modal_title: "Muokkaa kohdetta %{name}"
       badges:
-        title: Ansiomerkit
-        new_badge: Uusi ansiomerkki
+        title: Kunniamerkit
+        new_badge: Uusi kunniamerkki
         new: Uusi
         name: Nimi
-        badge: Ansiomerkki
+        badge: Kunniamerkki
         display_name: Nimi
         description: Kuvaus
         long_description: Pitkä kuvaus
-        badge_type: Ansiomerkin tyyppi
+        badge_type: Kunniamerkin tyyppi
         badge_grouping: Ryhmä
         badge_groupings:
-          modal_title: Ansiomerkkien ryhmitys
+          modal_title: Kunniamerkkien ryhmittely
         granted_by: Myöntäjä
         granted_at: Myönnetty
         reason_help: (Linkki viestiin tai ketjuun)
         save: Tallenna
         delete: Poista
-        delete_confirm: Oletko varma, että haluat poistaa tämän ansiomerkin?
-        revoke: Peruuta
+        delete_confirm: Oletko varma, että haluat poistaa tämän kunniamerkin?
+        revoke: Peru
         reason: Syy
         expand: Laajenna &hellip;
-        revoke_confirm: Oletko varma, että haluat peruuttaa ansiomerkin?
-        edit_badges: Muokkaa ansiomerkkejä
-        grant_badge: Myönnä ansiomerkki
-        granted_badges: Myönnetyt ansiomerkit
+        revoke_confirm: Oletko varma, että haluat peruuttaa kunniamerkin?
+        edit_badges: Muokkaa kunniamerkkejä
+        grant_badge: Myönnä kunniamerkki
+        granted_badges: Myönnetyt kunniamerkit
         grant: Myönnä
-        no_user_badges: "%{name} ei ole saanut yhtään ansiomerkkiä."
-        no_badges: Myönnettäviä ansiomerkkejä ei ole.
-        none_selected: "Aloita valitsemalla ansiomerkki"
-        allow_title: Salli ansiomerkin käyttäminen tittelinä
+        no_user_badges: "%{name} ei ole saanut yhtään kunniamerkkiä."
+        no_badges: Myönnettäviä kunniamerkkejä ei ole.
+        none_selected: "Aloita valitsemalla kunniamerkki"
+        allow_title: Salli kunniamerkin käyttäminen tittelinä
         multiple_grant: Voidaan myöntää useita kertoja
-        listable: Näytä ansiomerkki julkisella ansiomerkkisivulla
-        enabled: Ota ansiomerkki käyttöön
-        icon: Ikoni
+        listable: Näytä kunniamerkki julkisella ansiomerkkisivulla
+        enabled: Ota kunniamerkki käyttöön
+        icon: Kuvake
         image: Kuva
         graphic: Kuvake
-        icon_help: "Anna Font Awesome -ikonin nimi (käytä etuliitetty \"far-\" tavallisista ja \"fab-\" brändi-ikoneista)"
-        image_help: "Kuvan lataaminen ohittaa kuvakekentän jos molemmat on asetettu."
+        icon_help: "Anna Font Awesome -kuvakkeen nimi (käytä etuliitettä \"far-\" tavallisille kuvakkeille ja \"fab-\" brändikuvakkeille)"
+        image_help: "Kuvan lataaminen ohittaa kuvakekentän, jos molemmat on asetettu."
         select_an_icon: "Valitse kuvake"
         upload_an_image: "Lataa kuva"
         read_only_setting_help: "Mukauta tekstiä"
-        query: Ansiomerkkien haku tietokannasta (SQL)
+        query: Kunniamerkkikysely (SQL)
         target_posts: Tietokantakyselyn kohdeviestit
         auto_revoke: Aja kumoamis-ajo päivittäin
         show_posts: Näytä ansiomerkin tuonut viesti ansiomerkkisivulla
