@@ -4820,64 +4820,64 @@ fi:
         upload_an_image: "Lataa kuva"
         read_only_setting_help: "Mukauta tekstiä"
         query: Kunniamerkkikysely (SQL)
-        target_posts: Tietokantakyselyn kohdeviestit
-        auto_revoke: Aja kumoamis-ajo päivittäin
-        show_posts: Näytä ansiomerkin tuonut viesti ansiomerkkisivulla
+        target_posts: Kysely on kohdennettu viesteihin
+        auto_revoke: Suorita peruutuskysely päivittäin
+        show_posts: Näytä kunniamerkin tuonut viesti kunniamerkkisivulla
         trigger: Laukaisija
         trigger_type:
           none: "Päivitä päivittäin"
           post_action: "Kun käyttäjä toimii viestin suhteen"
           post_revision: "Kun käyttäjä muokkaa viestiä tai luo viestin"
           trust_level_change: "Kun käyttäjän luottamustaso vaihtuu"
-          user_change: "Kun käyttäjä luodaan tai sitä muokataan"
-          post_processed: "Sen jälkeen, kun viesti on käsitelty"
+          user_change: "Kun käyttäjä luodaan tai käyttäjää muokataan"
+          post_processed: "Viestin käsittelyn jälkeen"
         preview:
-          link_text: "Esikatsele myönnettäviä ansiomerkkejä"
-          plan_text: "Esikatsele query plan"
-          modal_title: "Ansiomerkin tietokantakyselyn esikatselu"
-          sql_error_header: "Kyselyn käsittelyssä tapahtui virhe."
-          error_help: "Apua ansiomerkkien tietokantakyselyihin saat seuraavista linkeistä."
+          link_text: "Esikatsele myönnettäviä kunniamerkkejä"
+          plan_text: "Esikatsele kyselysuunnitelmalla"
+          modal_title: "Kunniamerkin kyselyn esikatselu"
+          sql_error_header: "Kyselyssä tapahtui virhe."
+          error_help: "Apua kunniamerkkikyselyihin saat seuraavista linkeistä."
           bad_count_warning:
             header: "VAROITUS!"
-            text: "Myöntöjen näytteitä puuttuu. Tämä tapahtuu, kun ansiomerkin kysely palauttaa käyttäjä-ID:n tai viesti-ID:n, jota ei ole olemassa. Tämä voi johtaa odottamattomiin seurauksiin myöhemmin - tarkista kysely uudestaan."
-          no_grant_count: "Ei ansiomerkkejä myönnettäväksi"
+            text: "Antoesimerkkejä puuttuu. Tämä tapahtuu, kun kunniamerkkikysely palauttaa käyttäjätunnuksia tai viestien tunnuksia, joita ei ole olemassa. Tämä voi johtaa odottamattomiin seurauksiin myöhemmin – tarkista kyselysi."
+          no_grant_count: "Ei kunniamerkkejä myönnettäväksi."
           grant_count:
-            one: "<b>%{count}</b> ansiomerkki odottaa myöntämistä."
-            other: "<b>%{count}</b> ansiomerkkiä odottaa myöntämistä."
+            one: "<b>%{count}</b> myönnettävä kunniamerkki."
+            other: "<b>%{count}</b> myönnettävää kunniamerkkiä."
           sample: "Esimerkki:"
           grant:
             with: <span class="username">%{username}</span>
             with_post: <span class="username">%{username}</span> viestille ketjussa %{link}
-            with_post_time: <span class="username">%{username}</span> viestille ketjussa %{link} <span class="time">%{time}</span>
-            with_time: <span class="username">%{username}</span> <span class="time">%{time}</span>
+            with_post_time: <span class="username">%{username}</span> viestille ketjussa %{link} klo <span class="time">%{time}</span>
+            with_time: <span class="username">%{username}</span> klo <span class="time">%{time}</span>
         badge_intro:
-          title: "Aloita valitsemalla olemassa oleva ansiomerkki tai luomalla uusi"
+          title: "Aloita valitsemalla olemassa oleva kunniamerkki tai luomalla uusi"
           emoji: "naisopiskelijaemoji"
-          what_are_badges_title: "Mitä ansiomerkit ovat?"
-          badge_query_examples_title: "Esimerkkejä ansiomerkin tietokantakyselyistä"
+          what_are_badges_title: "Mitä kunniamerkit ovat?"
+          badge_query_examples_title: "Esimerkkejä kunniamerkkikyselyistä"
         mass_award:
-          title: Myönnä useille
-          description: Myönnä sama ansiomerkki useille käyttäjille samalla kertaa.
-          no_badge_selected: Aloita valitsemalla ansiomerkki.
-          perform: "Myönnä ansiomerkki käyttäjille"
-          upload_csv: Lataa CSV, jossa on joko käyttäjien sähköpostiosoitteet tai käyttäjänimet
-          aborted: Lataa CSV, jossa on joko käyttäjien sähköpostiosoitteet tai käyttäjänimet
-          success: CSV tuli perille ja käyttäjät saavat ansiomerkkinsä pian.
-          replace_owners: Poista ansiomerkki aiemmilta omistajilta
+          title: Joukkomyöntäminen
+          description: Myönnä sama kunniamerkki useille käyttäjille kerralla.
+          no_badge_selected: Aloita valitsemalla kunniamerkki.
+          perform: "Myönnä kunniamerkki käyttäjille"
+          upload_csv: Lataa CSV, jossa on joko käyttäjien sähköpostiosoitteita tai käyttäjätunnuksia
+          aborted: Lataa CSV, joka sisältää joko käyttäjien sähköpostiosoitteita tai käyttäjätunnuksia
+          success: CSV tuli perille ja käyttäjät saavat kunniamerkkinsä pian.
+          replace_owners: Poista kunniamerkki aiemmilta omistajilta
       emoji:
         title: "Emoji"
-        help: "Lisää uusi emoji joka on kaikkien käytettävissä. (Voit raahata useita tiedostoja kerralla)"
+        help: "Lisää uusi emoji, joka on kaikkien käytettävissä. (Vinkki: voit vetää ja pudottaa useita tiedostoja kerralla)"
         add: "Lisää uusi emoji"
-        uploading: "Lähettää..."
+        uploading: "Ladataan..."
         name: "Nimi"
         group: "Ryhmä"
         image: "Kuva"
         alt: "mukautetun emojin esikatselu"
         delete_confirm: "Oletko varma, että haluat poistaa emojin :%{name}:?"
       embedding:
-        get_started: "Jos haluat upottaa Discoursen toiselle sivustolle, aloita lisäämällä isäntä."
+        get_started: "Jos haluat upottaa Discoursen toiselle sivustolle, aloita lisäämällä sen isäntä."
         confirm_delete: "Oletko varma, että haluat poistaa tämän isännän?"
-        sample: "Käytä alla olevaa HTML-koodia sivustollasi jotta voit luoda ja upottaa discourse-ketjuja. Korvaa <b>REPLACE_ME</b> upotettavan sivun kanonisella URL-osoitteella."
+        sample: "Käytä alla olevaa HTML-koodia sivustollasi, jotta voit luoda ja upottaa discourse-ketjuja. Korvaa <b>REPLACE_ME</b> upotettavan sen sivun kanonisella URL-osoitteella, jolle upotat."
         title: "Upottaminen"
         host: "Sallitut isännät"
         class_name: "Luokan nimi"
@@ -4886,19 +4886,19 @@ fi:
         category: "Julkaise alueelle"
         add_host: "Lisää isäntä"
         settings: "Upotuksen asetukset"
-        crawling_settings: "Crawlerin asetukset"
-        crawling_description: "Kun Discourse aloittaa ketjuja kirjoituksistasi, se yrittää jäsentää kirjoitustesi sisältöä HTML:stä, jos RSS/ATOM-syötettä ei ole tarjolla, Joskus kirjoitusten sisällön poimiminen on haastavaa, joten tarjoamme mahdollisuuden määrittää CSS-sääntöjä sen helpottamiseksi."
-        embed_by_username: "Käyttäjänimi, jonka nimissä ketjut aloitetaan"
+        crawling_settings: "Hakurobottiasetukset"
+        crawling_description: "Kun Discourse aloittaa ketjuja viesteistäsi, se yrittää jäsentää kirjoitustesi sisältöä HTML:stä, jos RSS-/ATOM-syötettä ei ole tarjolla. Joskus kirjoitusten sisällön poimiminen on haastavaa, joten tarjoamme mahdollisuuden määrittää CSS-sääntöjä sen helpottamiseksi."
+        embed_by_username: "Käyttäjätunnus, jonka nimissä ketjut aloitetaan"
         embed_post_limit: "Upotettavien viestien maksimimäärä"
         embed_title_scrubber: "Säännöllinen lauseke, jolla riisutaan viestien otsikkoja"
         embed_truncate: "Typistä upotetut viestit"
-        embed_unlisted: "Tuodut ketjut ovat piilotettuna kunnes niihin vastataan."
+        embed_unlisted: "Tuodut ketjut ovat piilotettuna, kunnes niihin vastataan."
         allowed_embed_selectors: "CSS-valitsin elementeille, jotka ovat sallittuja upotuksissa"
         blocked_embed_selectors: "CSS-valitsin elementeille, jotka poistetaan upotuksista"
         allowed_embed_classnames: "Sallitut CSS-luokkien nimet"
         save: "Tallenna upotusasetukset"
       permalink:
-        title: "Ikilinkit"
+        title: "Pysyvät linkit"
         description: "Aseta uudelleenohjauksia URL-osoitteille, joita sivusto ei tunne."
         url: "URL"
         topic_id: "Ketjun ID"
